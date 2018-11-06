@@ -1,26 +1,13 @@
-<?php
-/**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Atemina
- */
+<?php 
+ /* Template Name: Animator page  */   
 
-get_header();
+ get_header();
 get_template_part( 'template-parts/formsearch_blog');
 ?>
-	<div class="container-blog">
+	<div class="container-animator">
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main">
-
 			<?php
-			
 			if ( have_posts() ) :
 
 				if ( is_home() && ! is_front_page() ) :
@@ -32,20 +19,13 @@ get_template_part( 'template-parts/formsearch_blog');
 				endif;
 
 				/* Start the Loop */
-				while ( have_posts() ) :
-					the_post();
-
-					/*
+				
+				/*
 					 * Include the Post-Type-specific template for the content.
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 					 */
-					get_template_part( 'template-parts/content', 'pageblog' );
-
-				endwhile;?>
-
-				
-				<?php
+					 get_template_part( 'template-parts/content', 'pageanimator' );
 			else :
 
 				get_template_part( 'template-parts/content', 'none' );
@@ -54,19 +34,12 @@ get_template_part( 'template-parts/formsearch_blog');
 			?>
 
 			</main><!-- #main -->
-			<div class="pagination">
-				<?php 
-				if (function_exists('devvn_wp_corenavi')) devvn_wp_corenavi($query);
-				 ?>
-			</div>
 		</div><!-- #primary -->
 
 		<?php
 		get_sidebar();
 		?>
 	</div>
-	<div class="clearfix">
-		
-	</div>
+	<div class="clearfix"></div>
 <?php
 get_footer();

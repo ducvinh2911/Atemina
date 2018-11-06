@@ -14,27 +14,53 @@
 
 get_header();
 ?>
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-
-		<?php
-		while ( have_posts() ) :
-			the_post();
-
-			get_template_part( 'template-parts/content', 'page' );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
+<div class="banner-single-post">
+		<div class="text-of-banner-author">
+			<div class="box-content-text">
+				<div class="box-1">
+					<div class="content-text">
+						<?php single_post_title(); ?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="breadcrumb-blog">
+		<div class="detail-breadcrumb">
+			<?php
+	        	bcn_display();
+	        ?>
+		</div>
+	</div>
+	<div class="container-blog-single">
+		
+		<div id="primary" class="content-area">
+			<div class="ads">
+				<?php dynamic_sidebar( 'widget_ads_top' ); ?>
+			</div>
+			<main id="main" class="site-main">
+			<?php
+			if ( have_posts() ) :
+				if ( is_home() && ! is_front_page() ) :
+				endif;
+					while ( have_posts() ) :
+						the_post();
+						get_template_part( 'template-parts/content', 'page' );
+					endwhile; // End of the loop.
+			else :
+				get_template_part( 'template-parts/content', 'none' );
 			endif;
-
-		endwhile; // End of the loop.
+			?>
+			</main><!-- #main -->
+			<div class="ads-bot">
+				<?php dynamic_sidebar( 'widget_ads_bottom' ); ?>
+			</div>
+		</div><!-- #primary -->
+		<?php
+		get_sidebar();
 		?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
+	</div>
+	<div class="clearfix"></div>
 <?php
-get_sidebar();
 get_footer();
+

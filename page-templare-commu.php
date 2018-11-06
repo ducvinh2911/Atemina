@@ -1,21 +1,12 @@
-<?php
-/**
- * The template for displaying archive pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Atemina
- */
+<?php 
+ /* Template Name: Commu page  */   
 
-get_header();
-get_template_part( 'template-parts/formsearch_blog');
+ get_header(); 
 ?>
-	<div class="container-blog">
+	<div class="container-animator pagecommu">
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main">
-
 			<?php
-			
 			if ( have_posts() ) :
 
 				if ( is_home() && ! is_front_page() ) :
@@ -27,20 +18,13 @@ get_template_part( 'template-parts/formsearch_blog');
 				endif;
 
 				/* Start the Loop */
-				while ( have_posts() ) :
-					the_post();
-
-					/*
+				
+				/*
 					 * Include the Post-Type-specific template for the content.
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 					 */
-					get_template_part( 'template-parts/content', 'pageblog' );
-
-				endwhile;?>
-
-				
-				<?php
+					 get_template_part( 'template-parts/formcomment'); 
 			else :
 
 				get_template_part( 'template-parts/content', 'none' );
@@ -49,11 +33,6 @@ get_template_part( 'template-parts/formsearch_blog');
 			?>
 
 			</main><!-- #main -->
-			<div class="pagination">
-				<?php 
-				if (function_exists('devvn_wp_corenavi')) devvn_wp_corenavi($query);
-				 ?>
-			</div>
 		</div><!-- #primary -->
 
 		<?php

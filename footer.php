@@ -14,19 +14,24 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'atemina' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'atemina' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'atemina' ), 'atemina', '<a href="https://atemina.com">Kanami Nagai</a>' );
-				?>
-		</div><!-- .site-info -->
+		
+				
+				<div class="footer-top"> 
+						<div class="container">
+							<div class="row">
+								<?php if ( is_active_sidebar( 'sidebar-footer' ) ) : ?> 
+										<?php dynamic_sidebar( 'sidebar-footer' ); ?> 
+								<?php endif; ?>
+							</div> 
+					</div>
+				</div>
+				<div class="site-info">
+					<div class="container">	
+						<?php the_custom_logo(); ?>
+						<span class="site-info-right">プライバシーポリシー　運営会社</span>
+					</div>	
+				</div><!-- .site-info --> 
+				<div class="line3">&nbsp;</div>			
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

@@ -1,0 +1,1402 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,900&subset=japanese");
+html {
+  font-size: 24px; }
+  @media only screen and (max-width: 2500px) {
+    html {
+      font-size: 20px; } }
+  @media only screen and (max-width: 1920px) {
+    html {
+      font-size: 18px; } }
+  @media only screen and (max-width: 1600px) {
+    html {
+      font-size: 14px; } }
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  background: #f6f5ef; }
+
+button, input, select, optgroup, textarea {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400; }
+
+h2, h3, h4, h5, h6 {
+  clear: both;
+  font-weight: 500; }
+
+.site-header {
+  background: #fff; }
+
+a, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .post-recent-author ul li a:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .breadcrumb-blog a:hover, .breadcrumb-blog a:visited, .container-blog .content-area .pagination .pagenavi span, .container-blog-single .content-area .pagination .pagenavi span, .container-animator .content-area .pagination .pagenavi span {
+  text-decoration: none; }
+  a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .post-recent-author ul li a:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .breadcrumb-blog a:hover, .container-blog .content-area .pagination .pagenavi span:hover, .container-blog-single .content-area .pagination .pagenavi span:hover, .container-animator .content-area .pagination .pagenavi span:hover, a:focus, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:focus:hover, .container-blog-single .post-recent-author ul li a:focus:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:focus:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:focus:hover, .breadcrumb-blog a:focus:hover, .breadcrumb-blog a:focus:visited, .container-blog .content-area .pagination .pagenavi span:focus, .container-blog-single .content-area .pagination .pagenavi span:focus, .container-animator .content-area .pagination .pagenavi span:focus {
+    color: #f0e546; }
+
+@media only screen and (min-width: 768px) {
+  .showmobile {
+    display: none !important; } }
+@media only screen and (max-width: 767px) {
+  .showdesktop {
+    display: none !important; } }
+.hide {
+  display: none; }
+
+.container, .breadcrumb-blog {
+  width: 2500px;
+  max-width: 100%;
+  padding: 0 2rem;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (max-width: 2500px) {
+    .container, .breadcrumb-blog {
+      width: 2000px; } }
+  @media only screen and (max-width: 1920px) {
+    .container, .breadcrumb-blog {
+      width: 1500px; } }
+  @media only screen and (max-width: 767px) {
+    .container, .breadcrumb-blog {
+      padding: 0 1rem; } }
+
+ul {
+  margin: 0; }
+
+.menumobile {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 21px;
+  height: 22px;
+  color: inherit;
+  background: transparent;
+  outline: none !important;
+  border: none; }
+  .menumobile .nav-toggle__burger-mid {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    height: 2.5px;
+    background-color: #1a1919;
+    transition-property: background-color; }
+    .menumobile .nav-toggle__burger-mid:before, .menumobile .nav-toggle__burger-mid:after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 2.5px;
+      background-color: #1a1919; }
+    .menumobile .nav-toggle__burger-mid::before {
+      top: -8px;
+      transition: top 300ms 300ms, transform 300ms 0ms; }
+    .menumobile .nav-toggle__burger-mid::after {
+      bottom: -8px;
+      transition: bottom 300ms 300ms, transform 300ms 0ms; }
+
+.mobile-navigation {
+  clear: both;
+  box-sizing: border-box; }
+  .mobile-navigation .menu {
+    padding: 0 1rem;
+    list-style: none;
+    margin-bottom: 1rem; }
+    .mobile-navigation .menu li {
+      padding: 5px 0; }
+      .mobile-navigation .menu li a, .mobile-navigation .menu li .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .mobile-navigation .menu li a:hover, .mobile-navigation .menu .container-blog-single .post-recent-author ul li a:hover, .container-blog-single .post-recent-author ul .mobile-navigation .menu li a:hover, .mobile-navigation .menu li .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .mobile-navigation .menu li .cat-links:hover, .mobile-navigation .menu li .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .mobile-navigation .menu li .cat-links:hover, .mobile-navigation .menu li .container-blog .content-area .pagination .pagenavi span, .container-blog .content-area .pagination .pagenavi .mobile-navigation .menu li span, .mobile-navigation .menu li .container-blog-single .content-area .pagination .pagenavi span, .container-blog-single .content-area .pagination .pagenavi .mobile-navigation .menu li span, .mobile-navigation .menu li .container-animator .content-area .pagination .pagenavi span, .container-animator .content-area .pagination .pagenavi .mobile-navigation .menu li span {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #231607; }
+
+.openmenu .menumobile .nav-toggle__burger-mid {
+  background-color: transparent; }
+  .openmenu .menumobile .nav-toggle__burger-mid::before {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 300ms 0ms, transform 300ms 300ms; }
+  .openmenu .menumobile .nav-toggle__burger-mid::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms 0ms, transform 300ms 300ms; }
+
+.site-header .container, .site-header .breadcrumb-blog {
+  padding: 0; }
+  @media only screen and (max-width: 2500px) {
+    .site-header .container, .site-header .breadcrumb-blog {
+      width: 100%; } }
+.site-header .site-header-wapper {
+  border-bottom: 1px solid #c0bfbe;
+  display: inline-block;
+  width: 100%;
+  float: left;
+  position: relative; }
+.site-header .site-branding {
+  display: inline-block;
+  float: left;
+  width: 40%;
+  text-align: left;
+  padding: 0.8rem 0;
+  padding-left: 2rem; }
+  @media only screen and (max-width: 1199px) {
+    .site-header .site-branding {
+      width: 25%; } }
+  @media only screen and (max-width: 767px) {
+    .site-header .site-branding {
+      width: auto;
+      max-width: 48%;
+      padding-left: 1rem; } }
+  .site-header .site-branding .site-title {
+    display: inline-block;
+    float: left;
+    width: 33%;
+    margin: 0; }
+    .site-header .site-branding .site-title img {
+      margin-top: 1rem; }
+      @media only screen and (max-width: 991px) {
+        .site-header .site-branding .site-title img {
+          margin-top: 2rem; } }
+      @media only screen and (max-width: 767px) {
+        .site-header .site-branding .site-title img {
+          margin-top: 0; } }
+    @media only screen and (max-width: 1199px) {
+      .site-header .site-branding .site-title {
+        width: 100%; } }
+  .site-header .site-branding .site-description {
+    display: inline-block;
+    float: left;
+    width: 67%;
+    margin-bottom: 0;
+    padding: 0 15px 0 2rem;
+    max-width: 600px; }
+    @media only screen and (max-width: 1199px) {
+      .site-header .site-branding .site-description {
+        display: none; } }
+.site-header .header-right {
+  display: inline-block;
+  float: right;
+  max-width: 60%;
+  text-align: right;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  display: flex;
+  align-items: center; }
+  @media only screen and (max-width: 1199px) {
+    .site-header .header-right {
+      width: 75%;
+      max-width: 75%;
+      padding-left: 3rem; } }
+  @media only screen and (max-width: 767px) {
+    .site-header .header-right {
+      width: 60px;
+      text-align: right;
+      display: block;
+      padding: 1.3rem 1rem; } }
+.site-header .seachform-box {
+  text-align: right;
+  display: inline-block;
+  width: 35%;
+  float: left; }
+  @media only screen and (max-width: 767px) {
+    .site-header .seachform-box {
+      display: none; } }
+.site-header .menu-icon-right {
+  text-align: right;
+  display: inline-block;
+  width: 65%; }
+  @media only screen and (max-width: 767px) {
+    .site-header .menu-icon-right {
+      display: none; } }
+  .site-header .menu-icon-right ul {
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    float: right;
+    border-top: 1px solid #c0bfbe; }
+    .site-header .menu-icon-right ul li {
+      display: inline-block;
+      text-align: center;
+      width: 7.7rem;
+      font-size: 0.8rem;
+      padding: 20px 5px;
+      border-left: 1px solid #c0bfbe;
+      margin: 0;
+      float: left;
+      border-right: none; }
+      .site-header .menu-icon-right ul li:nth-last-child(1) {
+        border-right: 1px solid #c0bfbe; }
+      .site-header .menu-icon-right ul li p {
+        margin-bottom: 0; }
+      @media only screen and (max-width: 991px) {
+        .site-header .menu-icon-right ul li {
+          width: 6rem; } }
+      .site-header .menu-icon-right ul li span {
+        display: inline-block;
+        float: none;
+        width: 51px;
+        height: 66px;
+        background-size: cover;
+        background-color: transparent; }
+        @media only screen and (max-width: 1920px) {
+          .site-header .menu-icon-right ul li span {
+            width: 40px;
+            height: 52px; } }
+
+.search-form {
+  display: inline-block;
+  margin-right: 20px; }
+  .search-form input[type="search"] {
+    padding: 0.8rem 10px;
+    color: #1d1a1a;
+    border: 1px solid #d8d8d8;
+    width: 100%; }
+  .search-form input[type="submit"] {
+    display: inline-block;
+    width: 56px;
+    height: 61px;
+    background-image: url(../images/search.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80% auto;
+    text-indent: -9999px;
+    overflow: hidden;
+    border: none;
+    outline: none !important;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%; }
+    @media only screen and (max-width: 1920px) {
+      .search-form input[type="submit"] {
+        width: 40px; } }
+  .search-form .input-group {
+    position: relative;
+    padding-right: 56px;
+    display: inline-block;
+    width: 100%; }
+    @media only screen and (max-width: 1920px) {
+      .search-form .input-group {
+        padding-right: 40px; } }
+
+.main-navigation {
+  text-align: center; }
+  .main-navigation .menu-main-menu-container {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left; }
+    .main-navigation .menu-main-menu-container li a, .main-navigation .menu-main-menu-container li .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .main-navigation .menu-main-menu-container li a:hover, .main-navigation .menu-main-menu-container .container-blog-single .post-recent-author ul li a:hover, .container-blog-single .post-recent-author ul .main-navigation .menu-main-menu-container li a:hover, .main-navigation .menu-main-menu-container li .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .main-navigation .menu-main-menu-container li .cat-links:hover, .main-navigation .menu-main-menu-container li .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .main-navigation .menu-main-menu-container li .cat-links:hover, .main-navigation .menu-main-menu-container li .container-blog .content-area .pagination .pagenavi span, .container-blog .content-area .pagination .pagenavi .main-navigation .menu-main-menu-container li span, .main-navigation .menu-main-menu-container li .container-blog-single .content-area .pagination .pagenavi span, .container-blog-single .content-area .pagination .pagenavi .main-navigation .menu-main-menu-container li span, .main-navigation .menu-main-menu-container li .container-animator .content-area .pagination .pagenavi span, .container-animator .content-area .pagination .pagenavi .main-navigation .menu-main-menu-container li span {
+      font-size: 1rem;
+      padding: 1.2rem 2rem;
+      font-weight: bold;
+      color: #231607; }
+
+.icon-logo-right {
+  background-image: url(../images/logo-right.png); }
+
+.icon-pen {
+  background-image: url(../images/pen.png); }
+
+.icon-user {
+  background-image: url(../images/user.png); }
+
+.icon-lock {
+  background-image: url(../images/lock.png); }
+
+.site-main-homepage .entry-header {
+  display: none; }
+
+.slider-home {
+  display: block; }
+  .slider-home .owl-nav {
+    position: absolute;
+    top: 50%;
+    right: 7rem;
+    font-size: 3rem;
+    margin: 0; }
+    @media only screen and (max-width: 767px) {
+      .slider-home .owl-nav {
+        right: 0; } }
+    .slider-home .owl-nav button {
+      margin: 0 5px;
+      float: left;
+      outline: none !important; }
+      .slider-home .owl-nav button span {
+        line-height: 2rem;
+        padding: 0;
+        margin: 0;
+        display: block;
+        height: 80px; }
+  .slider-home ul {
+    padding: 0; }
+    .slider-home ul .item {
+      position: relative; }
+      .slider-home ul .item .slider-content {
+        position: absolute;
+        top: 50%;
+        bottom: 0;
+        right: 0;
+        margin: 0 3rem 3rem 0;
+        padding: 20px 2rem;
+        max-width: 800px;
+        width: 40%; }
+        @media only screen and (max-width: 767px) {
+          .slider-home ul .item .slider-content {
+            display: none; } }
+        .slider-home ul .item .slider-content::before {
+          content: '';
+          background: rgba(240, 229, 70, 0.9);
+          position: absolute;
+          left: -2rem;
+          right: -2rem;
+          top: -900px;
+          bottom: -900px;
+          transform: rotate(33deg);
+          -webkit-transform: rotate(33deg);
+          -moz-transform: rotate(33deg);
+          -o-transform: rotate(33deg);
+          -ms-transform: rotate(33deg); }
+        .slider-home ul .item .slider-content * {
+          position: relative; }
+        .slider-home ul .item .slider-content h2 {
+          font-size: 1rem;
+          font-weight: bold; }
+        .slider-home ul .item .slider-content div p {
+          font-size: 2rem;
+          margin: 0;
+          text-align: left; }
+
+.section-blog {
+  margin: 0 -7px;
+  margin-bottom: 3rem; }
+  .section-blog .blog-item {
+    width: 33.33%;
+    float: left;
+    padding: 0 7px;
+    margin-bottom: 1rem; }
+    .section-blog .blog-item > a, .section-blog .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .blog-item > a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .section-blog .blog-item > a:hover, .section-blog .container-blog-single .post-recent-author ul li .blog-item > a:hover, .container-blog-single .post-recent-author ul li .section-blog .blog-item > a:hover, .section-blog .banner-single-post .text-of-banner .box-content-text .title-content-text .blog-item > .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .section-blog .blog-item > .cat-links:hover, .section-blog .banner-single-recruit .text-of-banner .box-content-text .title-content-text .blog-item > .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .section-blog .blog-item > .cat-links:hover, .section-blog .breadcrumb-blog .blog-item > a:hover, .section-blog .breadcrumb-blog .blog-item > a:visited, .section-blog .container-blog .content-area .pagination .pagenavi .blog-item > span, .container-blog .content-area .pagination .pagenavi .section-blog .blog-item > span, .section-blog .container-blog-single .content-area .pagination .pagenavi .blog-item > span, .container-blog-single .content-area .pagination .pagenavi .section-blog .blog-item > span, .section-blog .container-animator .content-area .pagination .pagenavi .blog-item > span, .container-animator .content-area .pagination .pagenavi .section-blog .blog-item > span {
+      float: left;
+      width: 100%;
+      display: -webkit-flex;
+      /* Safari */
+      -webkit-align-items: center;
+      /* Safari 7.0+ */
+      display: flex;
+      align-items: center; }
+    @media only screen and (max-width: 767px) {
+      .section-blog .blog-item {
+        width: 100%; } }
+    .section-blog .blog-item img {
+      width: 100%; }
+    .section-blog .blog-item:nth-child(1), .section-blog .blog-item:nth-child(2) {
+      width: 50%; }
+      @media only screen and (max-width: 767px) {
+        .section-blog .blog-item:nth-child(1), .section-blog .blog-item:nth-child(2) {
+          width: 100%; } }
+    .section-blog .blog-item:nth-child(3) {
+      clear: both; }
+    .section-blog .blog-item .blog-item-content {
+      background: #fff;
+      padding: 0 1.5rem;
+      width: 100%;
+      float: left; }
+      .section-blog .blog-item .blog-item-content h2 {
+        color: #241607;
+        font-size: 1.2rem;
+        font-weight: 400; }
+        .section-blog .blog-item .blog-item-content h2 a, .section-blog .blog-item .blog-item-content h2 .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .section-blog .blog-item .blog-item-content h2 a:hover, .section-blog .blog-item .blog-item-content h2 .container-blog-single .post-recent-author ul li a:hover, .container-blog-single .post-recent-author ul li .section-blog .blog-item .blog-item-content h2 a:hover, .section-blog .blog-item .blog-item-content h2 .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .section-blog .blog-item .blog-item-content h2 .cat-links:hover, .section-blog .blog-item .blog-item-content h2 .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .section-blog .blog-item .blog-item-content h2 .cat-links:hover, .section-blog .blog-item .blog-item-content h2 .container-blog .content-area .pagination .pagenavi span, .container-blog .content-area .pagination .pagenavi .section-blog .blog-item .blog-item-content h2 span, .section-blog .blog-item .blog-item-content h2 .container-blog-single .content-area .pagination .pagenavi span, .container-blog-single .content-area .pagination .pagenavi .section-blog .blog-item .blog-item-content h2 span, .section-blog .blog-item .blog-item-content h2 .container-animator .content-area .pagination .pagenavi span, .container-animator .content-area .pagination .pagenavi .section-blog .blog-item .blog-item-content h2 span {
+          color: #241607; }
+      .section-blog .blog-item .blog-item-content p {
+        color: #241607;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 1rem; }
+
+.category-name {
+  margin: 1rem 0; }
+  .category-name a, .category-name .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .category-name a:hover, .category-name .container-blog-single .post-recent-author ul li a:hover, .container-blog-single .post-recent-author ul li .category-name a:hover, .category-name .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .category-name .cat-links:hover, .category-name .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .category-name .cat-links:hover, .category-name .breadcrumb-blog a:hover, .breadcrumb-blog .category-name a:hover, .category-name .breadcrumb-blog a:visited, .breadcrumb-blog .category-name a:visited, .category-name .container-blog .content-area .pagination .pagenavi span, .container-blog .content-area .pagination .pagenavi .category-name span, .category-name .container-blog-single .content-area .pagination .pagenavi span, .container-blog-single .content-area .pagination .pagenavi .category-name span, .category-name .container-animator .content-area .pagination .pagenavi span, .container-animator .content-area .pagination .pagenavi .category-name span {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #241607; }
+
+.buttonbj-wapper {
+  text-align: center;
+  clear: both; }
+
+.buttonbj {
+  display: inline-block;
+  padding: 1.2rem 2rem 1.2rem 20px;
+  background: #1b499d;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  min-width: 35rem;
+  margin: 1rem auto; }
+  @media only screen and (max-width: 767px) {
+    .buttonbj {
+      min-width: 15rem; } }
+  .buttonbj:after {
+    content: '>';
+    float: right;
+    margin-right: -20px;
+    font-family: monospace;
+    font-size: 1.8rem;
+    margin-top: -0.6rem;
+    font-weight: 400; }
+
+.row {
+  margin-left: -7px;
+  margin-right: -7px; }
+
+.footer-top {
+  background: #121111;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 3rem 0 2rem;
+  display: inline-block;
+  width: 100%; }
+  .footer-top .widget-footer {
+    padding: 0 7px;
+    display: inline-block;
+    float: left;
+    width: 25%;
+    margin-bottom: 1rem; }
+    @media only screen and (max-width: 767px) {
+      .footer-top .widget-footer {
+        width: 50%; } }
+  .footer-top ul li {
+    list-style: none; }
+
+.site-info .custom-logo-link img {
+  height: 96px;
+  width: auto; }
+  @media only screen and (max-width: 1920px) {
+    .site-info .custom-logo-link img {
+      height: 50px; } }
+  @media only screen and (max-width: 767px) {
+    .site-info .custom-logo-link img {
+      height: 30px; } }
+.site-info .site-info-right {
+  float: right;
+  padding: 2rem 0 0;
+  font-weight: bold; }
+  @media only screen and (max-width: 767px) {
+    .site-info .site-info-right {
+      padding: 10px 0 0;
+      font-weight: bold;
+      font-size: 0.8rem; } }
+
+.section-recruit, .container-animator {
+  margin-bottom: 3rem; }
+  .section-recruit .row, .container-animator .row {
+    margin: 0 -35px; }
+    .section-recruit .row .recruit-item:nth-of-type(2n+1), .container-animator .row .recruit-item:nth-of-type(2n+1) {
+      clear: both; }
+  .section-recruit .recruit-item, .container-animator .recruit-item {
+    padding: 0 35px;
+    display: inline-block;
+    float: left;
+    width: 50%;
+    margin-bottom: 2rem; }
+    @media only screen and (max-width: 767px) {
+      .section-recruit .recruit-item, .container-animator .recruit-item {
+        width: 100%; } }
+    .section-recruit .recruit-item .recruit-item-box, .container-animator .recruit-item .recruit-item-box {
+      display: inline-block;
+      width: 100%;
+      background: #fff;
+      position: relative; }
+      .section-recruit .recruit-item .recruit-item-box > a, .container-animator .recruit-item .recruit-item-box > a, .section-recruit .recruit-item .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .recruit-item-box > a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .section-recruit .recruit-item .recruit-item-box > a:hover, .container-animator .recruit-item .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .recruit-item-box > a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .container-animator .recruit-item .recruit-item-box > a:hover, .section-recruit .recruit-item .container-blog-single .post-recent-author ul li .recruit-item-box > a:hover, .container-blog-single .post-recent-author ul li .section-recruit .recruit-item .recruit-item-box > a:hover, .container-animator .recruit-item .container-blog-single .post-recent-author ul li .recruit-item-box > a:hover, .container-blog-single .post-recent-author ul li .container-animator .recruit-item .recruit-item-box > a:hover, .section-recruit .recruit-item .banner-single-post .text-of-banner .box-content-text .title-content-text .recruit-item-box > .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .section-recruit .recruit-item .recruit-item-box > .cat-links:hover, .container-animator .recruit-item .banner-single-post .text-of-banner .box-content-text .title-content-text .recruit-item-box > .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-animator .recruit-item .recruit-item-box > .cat-links:hover, .section-recruit .recruit-item .banner-single-recruit .text-of-banner .box-content-text .title-content-text .recruit-item-box > .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .section-recruit .recruit-item .recruit-item-box > .cat-links:hover, .container-animator .recruit-item .banner-single-recruit .text-of-banner .box-content-text .title-content-text .recruit-item-box > .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-animator .recruit-item .recruit-item-box > .cat-links:hover, .section-recruit .recruit-item .breadcrumb-blog .recruit-item-box > a:hover, .container-animator .recruit-item .breadcrumb-blog .recruit-item-box > a:hover, .section-recruit .recruit-item .breadcrumb-blog .recruit-item-box > a:visited, .container-animator .recruit-item .breadcrumb-blog .recruit-item-box > a:visited, .section-recruit .recruit-item .container-blog .content-area .pagination .pagenavi .recruit-item-box > span, .container-blog .content-area .pagination .pagenavi .section-recruit .recruit-item .recruit-item-box > span, .container-blog .content-area .pagination .pagenavi .container-animator .recruit-item .recruit-item-box > span, .section-recruit .recruit-item .container-blog-single .content-area .pagination .pagenavi .recruit-item-box > span, .container-blog-single .content-area .pagination .pagenavi .section-recruit .recruit-item .recruit-item-box > span, .container-blog-single .content-area .pagination .pagenavi .container-animator .recruit-item .recruit-item-box > span, .section-recruit .recruit-item .container-animator .content-area .pagination .pagenavi .recruit-item-box > span, .container-animator .recruit-item .content-area .pagination .pagenavi .recruit-item-box > span, .container-animator .content-area .pagination .pagenavi .recruit-item .recruit-item-box > span {
+        float: left;
+        width: 30%;
+        display: inline-block;
+        border-right: 1px solid #a8a09b; }
+        .section-recruit .recruit-item .recruit-item-box > a img, .container-animator .recruit-item .recruit-item-box > a img, .section-recruit .recruit-item .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .recruit-item-box > a:hover img, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .section-recruit .recruit-item .recruit-item-box > a:hover img, .container-animator .recruit-item .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .recruit-item-box > a:hover img, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .container-animator .recruit-item .recruit-item-box > a:hover img, .section-recruit .recruit-item .container-blog-single .post-recent-author ul li .recruit-item-box > a:hover img, .container-blog-single .post-recent-author ul li .section-recruit .recruit-item .recruit-item-box > a:hover img, .container-animator .recruit-item .container-blog-single .post-recent-author ul li .recruit-item-box > a:hover img, .container-blog-single .post-recent-author ul li .container-animator .recruit-item .recruit-item-box > a:hover img, .section-recruit .recruit-item .banner-single-post .text-of-banner .box-content-text .title-content-text .recruit-item-box > .cat-links:hover img, .banner-single-post .text-of-banner .box-content-text .title-content-text .section-recruit .recruit-item .recruit-item-box > .cat-links:hover img, .container-animator .recruit-item .banner-single-post .text-of-banner .box-content-text .title-content-text .recruit-item-box > .cat-links:hover img, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-animator .recruit-item .recruit-item-box > .cat-links:hover img, .section-recruit .recruit-item .banner-single-recruit .text-of-banner .box-content-text .title-content-text .recruit-item-box > .cat-links:hover img, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .section-recruit .recruit-item .recruit-item-box > .cat-links:hover img, .container-animator .recruit-item .banner-single-recruit .text-of-banner .box-content-text .title-content-text .recruit-item-box > .cat-links:hover img, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-animator .recruit-item .recruit-item-box > .cat-links:hover img, .section-recruit .recruit-item .container-blog .content-area .pagination .pagenavi .recruit-item-box > span img, .container-blog .content-area .pagination .pagenavi .section-recruit .recruit-item .recruit-item-box > span img, .container-blog .content-area .pagination .pagenavi .container-animator .recruit-item .recruit-item-box > span img, .section-recruit .recruit-item .container-blog-single .content-area .pagination .pagenavi .recruit-item-box > span img, .container-blog-single .content-area .pagination .pagenavi .section-recruit .recruit-item .recruit-item-box > span img, .container-blog-single .content-area .pagination .pagenavi .container-animator .recruit-item .recruit-item-box > span img, .section-recruit .recruit-item .container-animator .content-area .pagination .pagenavi .recruit-item-box > span img, .container-animator .recruit-item .content-area .pagination .pagenavi .recruit-item-box > span img, .container-animator .content-area .pagination .pagenavi .recruit-item .recruit-item-box > span img {
+          width: 100%;
+          height: auto;
+          float: left; }
+      .section-recruit .recruit-item .recruit-item-box .recruit-item-content, .container-animator .recruit-item .recruit-item-box .recruit-item-content {
+        display: inline-block;
+        float: left;
+        width: 70%;
+        padding: 0 1.5rem;
+        padding-bottom: 6.2rem;
+        border-left: 1px solid #a8a09b;
+        margin-left: -1px; }
+        .section-recruit .recruit-item .recruit-item-box .recruit-item-content > p, .container-animator .recruit-item .recruit-item-box .recruit-item-content > p {
+          font-size: 1.2rem;
+          margin-top: 10px;
+          margin-bottom: 10px; }
+        .section-recruit .recruit-item .recruit-item-box .recruit-item-content h2 a, .container-animator .recruit-item .recruit-item-box .recruit-item-content h2 a, .section-recruit .recruit-item .recruit-item-box .recruit-item-content h2 .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .section-recruit .recruit-item .recruit-item-box .recruit-item-content h2 a:hover, .container-animator .recruit-item .recruit-item-box .recruit-item-content h2 .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .container-animator .recruit-item .recruit-item-box .recruit-item-content h2 a:hover, .section-recruit .recruit-item .recruit-item-box .recruit-item-content h2 .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .section-recruit .recruit-item .recruit-item-box .recruit-item-content h2 .cat-links:hover, .container-animator .recruit-item .recruit-item-box .recruit-item-content h2 .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-animator .recruit-item .recruit-item-box .recruit-item-content h2 .cat-links:hover, .section-recruit .recruit-item .recruit-item-box .recruit-item-content h2 .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .section-recruit .recruit-item .recruit-item-box .recruit-item-content h2 .cat-links:hover, .container-animator .recruit-item .recruit-item-box .recruit-item-content h2 .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-animator .recruit-item .recruit-item-box .recruit-item-content h2 .cat-links:hover, .section-recruit .recruit-item .recruit-item-box .recruit-item-content h2 .container-blog .content-area .pagination .pagenavi span, .container-blog .content-area .pagination .pagenavi .section-recruit .recruit-item .recruit-item-box .recruit-item-content h2 span, .container-blog .content-area .pagination .pagenavi .container-animator .recruit-item .recruit-item-box .recruit-item-content h2 span, .section-recruit .recruit-item .recruit-item-box .recruit-item-content h2 .container-blog-single .content-area .pagination .pagenavi span, .container-blog-single .content-area .pagination .pagenavi .section-recruit .recruit-item .recruit-item-box .recruit-item-content h2 span, .container-blog-single .content-area .pagination .pagenavi .container-animator .recruit-item .recruit-item-box .recruit-item-content h2 span, .section-recruit .recruit-item .recruit-item-box .recruit-item-content h2 .container-animator .content-area .pagination .pagenavi span, .container-animator .recruit-item .recruit-item-box .recruit-item-content h2 .content-area .pagination .pagenavi span, .container-animator .content-area .pagination .pagenavi .recruit-item .recruit-item-box .recruit-item-content h2 span {
+          font-size: 1rem;
+          color: #1b499d; }
+        @media only screen and (max-width: 1199px) {
+          .section-recruit .recruit-item .recruit-item-box .recruit-item-content h2, .container-animator .recruit-item .recruit-item-box .recruit-item-content h2 {
+            margin-top: 10px;
+            margin-bottom: 10px; } }
+        .section-recruit .recruit-item .recruit-item-box .recruit-item-content .recruit-item-bottom, .container-animator .recruit-item .recruit-item-box .recruit-item-content .recruit-item-bottom {
+          position: absolute;
+          bottom: 0;
+          left: auto;
+          right: 0;
+          height: 5rem;
+          width: 70%;
+          border-top: 1px solid #a8a09b;
+          padding: .5rem 1.5rem; }
+          .section-recruit .recruit-item .recruit-item-box .recruit-item-content .recruit-item-bottom h3, .container-animator .recruit-item .recruit-item-box .recruit-item-content .recruit-item-bottom h3 {
+            margin: 0 0 20px 0;
+            font-size: 1rem; }
+            @media only screen and (max-width: 1199px) {
+              .section-recruit .recruit-item .recruit-item-box .recruit-item-content .recruit-item-bottom h3, .container-animator .recruit-item .recruit-item-box .recruit-item-content .recruit-item-bottom h3 {
+                margin-bottom: 10px; } }
+          .section-recruit .recruit-item .recruit-item-box .recruit-item-content .recruit-item-bottom h4, .container-animator .recruit-item .recruit-item-box .recruit-item-content .recruit-item-bottom h4 {
+            margin: 0 0 20px 0;
+            font-size: 0.8rem; }
+            @media only screen and (max-width: 1199px) {
+              .section-recruit .recruit-item .recruit-item-box .recruit-item-content .recruit-item-bottom h4, .container-animator .recruit-item .recruit-item-box .recruit-item-content .recruit-item-bottom h4 {
+                margin-bottom: 10px; } }
+          .section-recruit .recruit-item .recruit-item-box .recruit-item-content .recruit-item-bottom .recruit-reamore, .container-animator .recruit-item .recruit-item-box .recruit-item-content .recruit-item-bottom .recruit-reamore {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 5rem;
+            width: 5rem;
+            text-align: center;
+            line-height: 5rem;
+            font-size: 60px;
+            font-family: monospace;
+            background: #e7e7e7;
+            color: #000;
+            border-top: 1px solid #a8a09b; }
+            @media only screen and (max-width: 767px) {
+              .section-recruit .recruit-item .recruit-item-box .recruit-item-content .recruit-item-bottom .recruit-reamore, .container-animator .recruit-item .recruit-item-box .recruit-item-content .recruit-item-bottom .recruit-reamore {
+                font-size: 30px; } }
+            .section-recruit .recruit-item .recruit-item-box .recruit-item-content .recruit-item-bottom .recruit-reamore:hover, .container-animator .recruit-item .recruit-item-box .recruit-item-content .recruit-item-bottom .recruit-reamore:hover {
+              color: #1b499d; }
+      .section-recruit .recruit-item .recruit-item-box .border-right-recruit .recruit-item-content, .container-animator .recruit-item .recruit-item-box .border-right-recruit .recruit-item-content {
+        padding-bottom: 7.5rem; }
+
+.header-section {
+  padding: 0 3rem; }
+  @media only screen and (max-width: 767px) {
+    .header-section {
+      padding: 0 0;
+      margin-bottom: 1rem; } }
+  .header-section h2, .header-section h4 {
+    font-weight: 400;
+    display: inline-block;
+    margin: 0 2rem 1rem 0; }
+    @media only screen and (max-width: 767px) {
+      .header-section h2, .header-section h4 {
+        margin: 0 1rem 0.5rem 0; } }
+  .header-section h2 {
+    font-size: 3rem; }
+  .header-section h4 {
+    font-size: 1.2rem; }
+  .header-section .header-section-center {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 1rem; }
+    .header-section .header-section-center .line3 {
+      max-width: 90%;
+      margin-left: 5%; }
+    .header-section .header-section-center h4 {
+      margin-right: 0; }
+
+.formsearch-post, .formsearch-post-blog {
+  padding: 2.5rem 2rem;
+  display: inline-block;
+  background: #f4dc25;
+  width: 100%;
+  position: relative;
+  margin-top: -0.5rem;
+  margin-bottom: 3rem; }
+  .formsearch-post .line, .formsearch-post-blog .line {
+    position: absolute;
+    top: -0.5rem;
+    left: 0;
+    right: 0; }
+  .formsearch-post .formsearch-post-wapper, .formsearch-post-blog .formsearch-post-wapper {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    padding-right: 4rem;
+    position: relative; }
+    .formsearch-post .formsearch-post-wapper .formsearch-post-row, .formsearch-post-blog .formsearch-post-wapper .formsearch-post-row {
+      margin: 0 -0.8rem; }
+      .formsearch-post .formsearch-post-wapper .formsearch-post-row .formsearch-post-item, .formsearch-post-blog .formsearch-post-wapper .formsearch-post-row .formsearch-post-item {
+        display: inline-block;
+        float: left;
+        width: 25%;
+        padding: 0 0.8rem; }
+        @media only screen and (max-width: 767px) {
+          .formsearch-post .formsearch-post-wapper .formsearch-post-row .formsearch-post-item, .formsearch-post-blog .formsearch-post-wapper .formsearch-post-row .formsearch-post-item {
+            width: 100%;
+            margin-bottom: 1rem; } }
+      .formsearch-post .formsearch-post-wapper .formsearch-post-row input, .formsearch-post-blog .formsearch-post-wapper .formsearch-post-row input, .formsearch-post .formsearch-post-wapper .formsearch-post-row select, .formsearch-post-blog .formsearch-post-wapper .formsearch-post-row select {
+        padding: 0.8rem 10px;
+        color: #1d1a1a;
+        border: 1px solid #d8d8d8;
+        border-radius: 3px;
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.5; }
+      .formsearch-post .formsearch-post-wapper .formsearch-post-row select, .formsearch-post-blog .formsearch-post-wapper .formsearch-post-row select {
+        background: #f0f0f0; }
+      .formsearch-post .formsearch-post-wapper .formsearch-post-row .search-button, .formsearch-post-blog .formsearch-post-wapper .formsearch-post-row .search-button {
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        text-indent: -99999px;
+        overflow: hidden;
+        border-radius: 100%;
+        background-color: transparent;
+        border: none;
+        background-image: url(../images/searchicon.png);
+        background-size: cover; }
+        @media only screen and (max-width: 767px) {
+          .formsearch-post .formsearch-post-wapper .formsearch-post-row .search-button, .formsearch-post-blog .formsearch-post-wapper .formsearch-post-row .search-button {
+            bottom: 1rem;
+            right: 0; } }
+
+.line {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  height: 0.5rem;
+  background-image: url(../images/line.png);
+  background-size: 100% 100%; }
+
+.line3 {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  height: 0.5rem;
+  background-image: url(../images/line3.png);
+  background-size: 100% 100%; }
+
+.section-commu {
+  margin-bottom: 6rem; }
+  .section-commu .header-section {
+    text-align: center;
+    margin-bottom: 3rem; }
+  .section-commu .section-commu-row {
+    text-align: center; }
+    .section-commu .section-commu-row .section-commu-item {
+      width: 1300px;
+      margin: 0 auto;
+      max-width: 70%;
+      text-align: left;
+      background: #fff;
+      padding: 1rem 2rem 0;
+      border-radius: 1rem 1rem 0 0;
+      margin-bottom: 2.5rem; }
+      @media only screen and (max-width: 767px) {
+        .section-commu .section-commu-row .section-commu-item {
+          max-width: 98%; } }
+      .section-commu .section-commu-row .section-commu-item .header-commu {
+        position: relative; }
+        .section-commu .section-commu-row .section-commu-item .header-commu > img {
+          width: 6rem;
+          height: auto;
+          float: left;
+          margin: 0 1rem 1rem 0; }
+        .section-commu .section-commu-row .section-commu-item .header-commu > div {
+          width: calc(100% - 11rem);
+          display: inline-block; }
+        .section-commu .section-commu-row .section-commu-item .header-commu .commu-action {
+          position: absolute;
+          right: 0;
+          top: 1rem;
+          width: 4rem;
+          text-align: right; }
+          .section-commu .section-commu-row .section-commu-item .header-commu .commu-action img {
+            width: 1.8rem;
+            height: auto; }
+          .section-commu .section-commu-row .section-commu-item .header-commu .commu-action span {
+            font-size: 1.2rem; }
+      .section-commu .section-commu-row .section-commu-item .footer-commu {
+        margin-left: -2rem;
+        margin-right: -2rem;
+        padding: 1.2rem 2rem;
+        background: #f4dc25; }
+        .section-commu .section-commu-row .section-commu-item .footer-commu .input-group {
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          width: 100%;
+          -webkit-flex-wrap: wrap;
+          -moz-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          -webkit-justify-content: center;
+          -ms-justify-content: center;
+          justify-content: center; }
+          .section-commu .section-commu-row .section-commu-item .footer-commu .input-group .inputlabel {
+            padding: 0.5rem 0; }
+          .section-commu .section-commu-row .section-commu-item .footer-commu .input-group .inputright {
+            flex-grow: 1;
+            padding-left: 1rem; }
+            .section-commu .section-commu-row .section-commu-item .footer-commu .input-group .inputright input {
+              width: 100%;
+              padding: 0.5rem;
+              border-radius: 1rem;
+              border: 1px solid #d8d8d8;
+              outline: none !important; }
+
+.error-404 {
+  text-align: center;
+  padding: 50px 0; }
+
+.container-blog-single {
+  margin-top: 30px; }
+  @media only screen and (max-width: 767px) {
+    .container-blog-single {
+      margin-top: 15px; } }
+  .container-blog-single .content-area article {
+    width: 100%;
+    background: #ffffff;
+    padding: 2rem 3rem; }
+    @media only screen and (max-width: 767px) {
+      .container-blog-single .content-area article {
+        padding: 1rem; } }
+  .container-blog-single .entry-header .img-single-post {
+    margin-top: 1.3rem; }
+    @media only screen and (max-width: 767px) {
+      .container-blog-single .entry-header .img-single-post {
+        margin-top: 1rem; } }
+  .container-blog-single .entry-content p {
+    margin: 0px;
+    text-align: justify; }
+  .container-blog-single .share-this {
+    display: flex;
+    width: 80%;
+    margin: 30px auto; }
+    @media only screen and (max-width: 767px) {
+      .container-blog-single .share-this {
+        display: block; } }
+  .container-blog-single .share-fb {
+    margin-right: 30px; }
+    @media only screen and (max-width: 767px) {
+      .container-blog-single .share-fb {
+        margin-right: 0px; } }
+  .container-blog-single .author-single {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid #434343;
+    border-bottom: 1px solid #434343;
+    padding: 15px 0px; }
+    .container-blog-single .author-single .author-single-entry {
+      display: flex;
+      position: relative; }
+      .container-blog-single .author-single .author-single-entry .iw-property-avartar {
+        margin-right: 15px; }
+      .container-blog-single .author-single .author-single-entry .iw-property-name {
+        margin: 0px;
+        width: 86%; }
+        .container-blog-single .author-single .author-single-entry .iw-property-name .profile {
+          color: #1b499d;
+          text-transform: uppercase;
+          font-size: 1.2rem;
+          font-weight: 500; }
+        .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .cat-links:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .cat-links:hover, .container-blog .content-area .pagination .pagenavi .container-blog-single .author-single .author-single-entry .iw-property-name .name-author span, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .content-area .pagination .pagenavi span, .container-blog-single .content-area .pagination .pagenavi .author-single .author-single-entry .iw-property-name .name-author span, .container-animator .content-area .pagination .pagenavi .container-blog-single .author-single .author-single-entry .iw-property-name .name-author span {
+          font-size: 1.5rem;
+          font-weight: 500;
+          color: #1b1919; }
+        .container-blog-single .author-single .author-single-entry .iw-property-name .name-author {
+          margin: 5px 0px; }
+        .container-blog-single .author-single .author-single-entry .iw-property-name .description-author {
+          margin: 5px; }
+        .container-blog-single .author-single .author-single-entry .iw-property-name .age-author, .container-blog-single .author-single .author-single-entry .iw-property-name .position-author, .container-blog-single .author-single .author-single-entry .iw-property-name .achievements-author {
+          font-size: 1.2rem; }
+      @media only screen and (max-width: 767px) {
+        .container-blog-single .author-single .author-single-entry {
+          display: block;
+          text-align: center; } }
+  .container-blog-single .post-recent-author {
+    position: relative;
+    margin: 1rem 0; }
+    .container-blog-single .post-recent-author ul {
+      list-style: none;
+      padding: 5px 0px; }
+      .container-blog-single .post-recent-author ul li {
+        width: 49%;
+        list-style: none;
+        display: inline-block; }
+        .container-blog-single .post-recent-author ul li a, .container-blog-single .post-recent-author ul li .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .post-recent-author ul li a:hover, .container-blog-single .post-recent-author ul li a:hover, .container-blog-single .post-recent-author ul li .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-blog-single .post-recent-author ul li .cat-links:hover, .container-blog-single .post-recent-author ul li .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-blog-single .post-recent-author ul li .cat-links:hover, .container-blog .content-area .pagination .pagenavi .container-blog-single .post-recent-author ul li span, .container-blog-single .post-recent-author ul li .content-area .pagination .pagenavi span, .container-blog-single .content-area .pagination .pagenavi .post-recent-author ul li span, .container-animator .content-area .pagination .pagenavi .container-blog-single .post-recent-author ul li span {
+          color: #7b797c; }
+        @media only screen and (max-width: 767px) {
+          .container-blog-single .post-recent-author ul li {
+            width: 100%;
+            display: block; } }
+  .container-blog-single .post-product h2 {
+    font-size: 1.5rem; }
+  .container-blog-single .post-product ul {
+    padding: 0px;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    display: flex;
+    float: left;
+    margin-bottom: 1.5rem; }
+    @media only screen and (max-width: 767px) {
+      .container-blog-single .post-product ul {
+        width: 100%;
+        display: block;
+        margin-bottom: 1rem; } }
+    .container-blog-single .post-product ul .single-product {
+      display: inline-block;
+      width: 50%;
+      float: left; }
+      @media only screen and (max-width: 767px) {
+        .container-blog-single .post-product ul .single-product {
+          width: 100%; } }
+      .container-blog-single .post-product ul .single-product:first-child {
+        margin-right: 15px; }
+      .container-blog-single .post-product ul .single-product img {
+        width: 100%; }
+  .container-blog-single .recent-post h2 {
+    font-size: 1.5rem; }
+  .container-blog-single .recent-post .content-recent {
+    margin: 0 0 1.5rem;
+    padding: 0 7.5px;
+    display: inline-block;
+    float: left;
+    width: 50%; }
+    .container-blog-single .recent-post .content-recent:nth-of-type(2n+1) {
+      clear: both; }
+    @media only screen and (max-width: 767px) {
+      .container-blog-single .recent-post .content-recent {
+        width: 100%;
+        padding: 0; } }
+    .container-blog-single .recent-post .content-recent .entry-header-blog {
+      background: #ffffff;
+      padding: 15px 18px;
+      width: 100%;
+      float: left; }
+      .container-blog-single .recent-post .content-recent .entry-header-blog .cat-links {
+        text-transform: uppercase; }
+      .container-blog-single .recent-post .content-recent .entry-header-blog .entry-meta-blog {
+        padding: 8px 0px 5px;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.5; }
+      .container-blog-single .recent-post .content-recent .entry-header-blog .entry-title-blog {
+        font-size: 17px;
+        margin: 0px; }
+      .container-blog-single .recent-post .content-recent .entry-header-blog a, .container-blog-single .recent-post .content-recent .entry-header-blog .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .recent-post .content-recent .entry-header-blog a:hover, .container-blog-single .recent-post .content-recent .entry-header-blog .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-blog-single .recent-post .content-recent .entry-header-blog .cat-links:hover, .container-blog-single .recent-post .content-recent .entry-header-blog .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-blog-single .recent-post .content-recent .entry-header-blog .cat-links:hover, .container-blog .content-area .pagination .pagenavi .container-blog-single .recent-post .content-recent .entry-header-blog span, .container-blog-single .recent-post .content-recent .entry-header-blog .content-area .pagination .pagenavi span, .container-blog-single .content-area .pagination .pagenavi .recent-post .content-recent .entry-header-blog span, .container-animator .content-area .pagination .pagenavi .container-blog-single .recent-post .content-recent .entry-header-blog span {
+        color: #000000; }
+    .container-blog-single .recent-post .content-recent .post-thumbnail {
+      width: 100%;
+      float: left;
+      display: -webkit-flex;
+      -webkit-align-items: center;
+      display: flex;
+      align-items: center; }
+  .container-blog-single .tag-recruit-dn {
+    width: 100%;
+    margin-bottom: 20px;
+    float: left;
+    position: relative; }
+    .container-blog-single .tag-recruit-dn .tag-dn {
+      background: #e71f1a;
+      color: #ffffff;
+      padding: 15px 20px;
+      margin: 5px 10px 5px 0px;
+      display: inline-block; }
+
+.banner-single-post, .banner-single-recruit {
+  position: relative;
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .banner-single-post img, .banner-single-recruit img {
+    width: 100%; }
+    @media only screen and (max-width: 767px) {
+      .banner-single-post img, .banner-single-recruit img {
+        min-height: 150px; } }
+  .banner-single-post .text-of-banner, .banner-single-recruit .text-of-banner {
+    width: 100%;
+    position: absolute;
+    bottom: 15%; }
+    .banner-single-post .text-of-banner .box-content-text, .banner-single-recruit .text-of-banner .box-content-text {
+      width: 50%;
+      margin: auto;
+      text-align: center;
+      position: relative;
+      background: #f4dc25;
+      min-height: 8.25rem;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      @media only screen and (max-width: 767px) {
+        .banner-single-post .text-of-banner .box-content-text, .banner-single-recruit .text-of-banner .box-content-text {
+          width: 80%; } }
+      .banner-single-post .text-of-banner .box-content-text .box-1, .banner-single-recruit .text-of-banner .box-content-text .box-1 {
+        margin: 1rem 5rem 2rem; }
+        @media only screen and (max-width: 767px) {
+          .banner-single-post .text-of-banner .box-content-text .box-1, .banner-single-recruit .text-of-banner .box-content-text .box-1 {
+            margin: 0.8rem; } }
+      .banner-single-post .text-of-banner .box-content-text .title-content-text, .banner-single-recruit .text-of-banner .box-content-text .title-content-text {
+        margin: 1.5rem 0; }
+        @media only screen and (max-width: 767px) {
+          .banner-single-post .text-of-banner .box-content-text .title-content-text, .banner-single-recruit .text-of-banner .box-content-text .title-content-text {
+            margin: 0.5rem 0; } }
+        .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links a, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links a, .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links a:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links a:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links .container-blog .content-area .pagination .pagenavi span, .container-blog .content-area .pagination .pagenavi .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links span, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links .container-blog .content-area .pagination .pagenavi span, .container-blog .content-area .pagination .pagenavi .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links span, .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links .container-blog-single .content-area .pagination .pagenavi span, .container-blog-single .content-area .pagination .pagenavi .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links span, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links .container-blog-single .content-area .pagination .pagenavi span, .container-blog-single .content-area .pagination .pagenavi .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links span, .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links .container-animator .content-area .pagination .pagenavi span, .container-animator .content-area .pagination .pagenavi .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links span, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links .container-animator .content-area .pagination .pagenavi span, .container-animator .content-area .pagination .pagenavi .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links span {
+          color: #404040; }
+      .banner-single-post .text-of-banner .box-content-text .content-text, .banner-single-recruit .text-of-banner .box-content-text .content-text, .banner-single-post .text-of-banner .text-of-banner-author .box-content-text .content-text-position, .banner-single-post .text-of-banner-author .text-of-banner .box-content-text .content-text-position, .banner-single-recruit .text-of-banner .text-of-banner-author .box-content-text .content-text-position, .banner-single-recruit .text-of-banner-author .text-of-banner .box-content-text .content-text-position {
+        font-size: 1.75rem; }
+        @media only screen and (max-width: 767px) {
+          .banner-single-post .text-of-banner .box-content-text .content-text, .banner-single-recruit .text-of-banner .box-content-text .content-text, .banner-single-post .text-of-banner .text-of-banner-author .box-content-text .content-text-position, .banner-single-post .text-of-banner-author .text-of-banner .box-content-text .content-text-position, .banner-single-recruit .text-of-banner .text-of-banner-author .box-content-text .content-text-position, .banner-single-recruit .text-of-banner-author .text-of-banner .box-content-text .content-text-position {
+            font-size: 1.2rem; } }
+        .banner-single-post .text-of-banner .box-content-text .content-text p, .banner-single-recruit .text-of-banner .box-content-text .content-text p, .banner-single-post .text-of-banner .text-of-banner-author .box-content-text .content-text-position p, .banner-single-post .text-of-banner-author .text-of-banner .box-content-text .content-text-position p, .banner-single-recruit .text-of-banner .text-of-banner-author .box-content-text .content-text-position p, .banner-single-recruit .text-of-banner-author .text-of-banner .box-content-text .content-text-position p {
+          margin: 5px 0px; }
+
+.breadcrumb-blog {
+  background: #2b2d31;
+  padding: 1.2rem 2rem;
+  color: #ffffff;
+  width: 100%;
+  display: flex; }
+  .breadcrumb-blog .detail-breadcrumb {
+    width: 2500px;
+    max-width: 100%;
+    padding: 0 2rem;
+    margin-left: auto;
+    margin-right: auto; }
+  @media only screen and (max-width: 767px) {
+    .breadcrumb-blog {
+      padding: 1rem 0px; } }
+  .breadcrumb-blog a, .breadcrumb-blog .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .breadcrumb-blog a:hover, .breadcrumb-blog .container-blog-single .post-recent-author ul li a:hover, .container-blog-single .post-recent-author ul li .breadcrumb-blog a:hover, .breadcrumb-blog .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .breadcrumb-blog .cat-links:hover, .breadcrumb-blog .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .breadcrumb-blog .cat-links:hover, .breadcrumb-blog a:hover, .breadcrumb-blog a:visited, .breadcrumb-blog .container-blog .content-area .pagination .pagenavi span, .container-blog .content-area .pagination .pagenavi .breadcrumb-blog span, .breadcrumb-blog .container-blog-single .content-area .pagination .pagenavi span, .container-blog-single .content-area .pagination .pagenavi .breadcrumb-blog span, .breadcrumb-blog .container-animator .content-area .pagination .pagenavi span, .container-animator .content-area .pagination .pagenavi .breadcrumb-blog span {
+    color: #ffffff; }
+
+.ads, .ads-bot {
+  margin-bottom: 30px; }
+  @media only screen and (max-width: 767px) {
+    .ads, .ads-bot {
+      margin-bottom: 15px; } }
+  .ads img, .ads-bot img {
+    width: 100%; }
+
+.ads-bot {
+  margin-top: 30px; }
+  @media only screen and (max-width: 767px) {
+    .ads-bot {
+      margin-top: 15px; } }
+
+.entry-meta-single .posted-on, .entry-meta-single .animation-industry {
+  display: inline-block;
+  color: #bfbaba; }
+.entry-meta-single .animation-industry {
+  float: right; }
+
+.entry-title-single {
+  border-left: 5px solid #e71f1a;
+  padding-left: 10px;
+  font-size: 1.3rem; }
+
+.entry-content p {
+  font-size: 1.14875rem; }
+
+#sync1 .item {
+  padding: 10px 0px;
+  margin: 5px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center; }
+  #sync1 .item h1 {
+    margin: 0px; }
+  @media only screen and (max-width: 767px) {
+    #sync1 .item {
+      padding: 0px; } }
+
+#sync2 .item {
+  padding: 10px 0px;
+  margin: 5px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer; }
+  #sync2 .item h1 {
+    margin: 0px; }
+  @media only screen and (max-width: 767px) {
+    #sync2 .item {
+      padding: 0px; } }
+
+.owl-theme .owl-nav {
+  /*default owl-theme theme reset .disabled:hover links */ }
+  .owl-theme .owl-nav [class*='owl-'] {
+    transition: all .3s ease; }
+    .owl-theme .owl-nav [class*='owl-'].disabled:hover {
+      background-color: #D6D6D6; }
+
+#sync1.owl-theme {
+  position: relative; }
+  #sync1.owl-theme .owl-next, #sync1.owl-theme .owl-prev {
+    width: 22px;
+    height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    top: 50%; }
+  #sync1.owl-theme .owl-prev {
+    left: 10px; }
+  #sync1.owl-theme .owl-next {
+    right: 10px; }
+
+.container-animator {
+  margin-bottom: 0px; }
+  .container-animator .author-list .recruit-item {
+    width: 100%;
+    padding: 0px; }
+    .container-animator .author-list .recruit-item .recruit-item-box a, .container-animator .author-list .recruit-item .recruit-item-box .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .container-animator .author-list .recruit-item .recruit-item-box a:hover, .container-animator .author-list .recruit-item .recruit-item-box .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-animator .author-list .recruit-item .recruit-item-box .cat-links:hover, .container-animator .author-list .recruit-item .recruit-item-box .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-animator .author-list .recruit-item .recruit-item-box .cat-links:hover, .container-blog .content-area .pagination .pagenavi .container-animator .author-list .recruit-item .recruit-item-box span, .container-blog-single .content-area .pagination .pagenavi .container-animator .author-list .recruit-item .recruit-item-box span, .container-animator .author-list .recruit-item .recruit-item-box .content-area .pagination .pagenavi span, .container-animator .content-area .pagination .pagenavi .author-list .recruit-item .recruit-item-box span {
+      width: 25%; }
+    .container-animator .author-list .recruit-item .recruit-item-box .recruit-item-content {
+      width: 75%;
+      padding-bottom: 11rem; }
+      .container-animator .author-list .recruit-item .recruit-item-box .recruit-item-content h2 {
+        font-size: 1rem; }
+      .container-animator .author-list .recruit-item .recruit-item-box .recruit-item-content .recruit-item-bottom {
+        width: 75%; }
+        .container-animator .author-list .recruit-item .recruit-item-box .recruit-item-content .recruit-item-bottom h4 {
+          margin-right: 10%; }
+          @media only screen and (max-width: 767px) {
+            .container-animator .author-list .recruit-item .recruit-item-box .recruit-item-content .recruit-item-bottom h4 {
+              margin-right: 25%; } }
+  .container-animator .author-list .border-right-cs .recruit-item-box .recruit-item-content {
+    padding-bottom: 9.4rem; }
+
+.banner-single-post .text-of-banner-author, .banner-single-recruit .text-of-banner-author {
+  width: 100%;
+  background: #f4dc25; }
+  .banner-single-post .text-of-banner-author .box-content-text, .banner-single-recruit .text-of-banner-author .box-content-text {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    background: #f4dc25;
+    min-height: 13.54rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media only screen and (max-width: 767px) {
+      .banner-single-post .text-of-banner-author .box-content-text, .banner-single-recruit .text-of-banner-author .box-content-text {
+        width: 80%;
+        min-height: 0; } }
+    .banner-single-post .text-of-banner-author .box-content-text .content-text, .banner-single-recruit .text-of-banner-author .box-content-text .content-text, .banner-single-post .text-of-banner-author .box-content-text .content-text-position, .banner-single-recruit .text-of-banner-author .box-content-text .content-text-position {
+      font-size: 1.75rem; }
+      @media only screen and (max-width: 767px) {
+        .banner-single-post .text-of-banner-author .box-content-text .content-text, .banner-single-recruit .text-of-banner-author .box-content-text .content-text, .banner-single-post .text-of-banner-author .box-content-text .content-text-position, .banner-single-recruit .text-of-banner-author .box-content-text .content-text-position {
+          font-size: 1.2rem; } }
+      .banner-single-post .text-of-banner-author .box-content-text .content-text p, .banner-single-recruit .text-of-banner-author .box-content-text .content-text p, .banner-single-post .text-of-banner-author .box-content-text .content-text-position p, .banner-single-recruit .text-of-banner-author .box-content-text .content-text-position p {
+        margin: 5px 0px; }
+    .banner-single-post .text-of-banner-author .box-content-text .content-text-position, .banner-single-recruit .text-of-banner-author .box-content-text .content-text-position {
+      font-weight: 400;
+      font-size: 0.9rem;
+      margin: 1.5rem 0 1.5rem 0; }
+      @media only screen and (max-width: 767px) {
+        .banner-single-post .text-of-banner-author .box-content-text .content-text-position, .banner-single-recruit .text-of-banner-author .box-content-text .content-text-position {
+          margin: 0.5rem 0; } }
+    .banner-single-post .text-of-banner-author .box-content-text .title-content-text, .banner-single-recruit .text-of-banner-author .box-content-text .title-content-text {
+      font-size: 0.9rem;
+      margin: 1.8rem 0 1.8rem 0; }
+      @media only screen and (max-width: 767px) {
+        .banner-single-post .text-of-banner-author .box-content-text .title-content-text, .banner-single-recruit .text-of-banner-author .box-content-text .title-content-text {
+          margin: 1rem 0; } }
+    .banner-single-post .text-of-banner-author .box-content-text .box-1, .banner-single-recruit .text-of-banner-author .box-content-text .box-1 {
+      margin: 1rem 10rem 2rem; }
+      @media only screen and (max-width: 767px) {
+        .banner-single-post .text-of-banner-author .box-content-text .box-1, .banner-single-recruit .text-of-banner-author .box-content-text .box-1 {
+          margin: 0.8rem; } }
+
+.author-sidebar .author-sidebar-img {
+  background: #ffffff;
+  width: 100%;
+  float: left; }
+  .author-sidebar .author-sidebar-img img {
+    width: 100%; }
+.author-sidebar .author-sidebar-infor {
+  background: #ffffff;
+  padding: 15px 18px;
+  width: 100%;
+  float: left; }
+  .author-sidebar .author-sidebar-infor .author-1, .author-sidebar .author-sidebar-infor .author-name {
+    display: flex;
+    width: 100%;
+    float: left;
+    margin: 5px 0px;
+    font-weight: 500;
+    font-size: 0.9rem; }
+  .author-sidebar .author-sidebar-infor .author-name {
+    font-weight: 600;
+    font-size: 1.5rem; }
+  .author-sidebar .author-sidebar-infor .author-description h3 {
+    font-size: 0.9rem; }
+  .author-sidebar .author-sidebar-infor .author-description a, .author-sidebar .author-sidebar-infor .author-description .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .author-sidebar .author-sidebar-infor .author-description a:hover, .author-sidebar .author-sidebar-infor .author-description .container-blog-single .post-recent-author ul li a:hover, .container-blog-single .post-recent-author ul li .author-sidebar .author-sidebar-infor .author-description a:hover, .author-sidebar .author-sidebar-infor .author-description .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .author-sidebar .author-sidebar-infor .author-description .cat-links:hover, .author-sidebar .author-sidebar-infor .author-description .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .author-sidebar .author-sidebar-infor .author-description .cat-links:hover, .author-sidebar .author-sidebar-infor .author-description .container-blog .content-area .pagination .pagenavi span, .container-blog .content-area .pagination .pagenavi .author-sidebar .author-sidebar-infor .author-description span, .author-sidebar .author-sidebar-infor .author-description .container-blog-single .content-area .pagination .pagenavi span, .container-blog-single .content-area .pagination .pagenavi .author-sidebar .author-sidebar-infor .author-description span, .author-sidebar .author-sidebar-infor .author-description .container-animator .content-area .pagination .pagenavi span, .container-animator .content-area .pagination .pagenavi .author-sidebar .author-sidebar-infor .author-description span {
+    color: #404040; }
+    .author-sidebar .author-sidebar-infor .author-description a:hover, .author-sidebar .author-sidebar-infor .author-description .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .author-sidebar .author-sidebar-infor .author-description a:hover, .author-sidebar .author-sidebar-infor .author-description .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .author-sidebar .author-sidebar-infor .author-description .cat-links:hover, .author-sidebar .author-sidebar-infor .author-description .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .author-sidebar .author-sidebar-infor .author-description .cat-links:hover, .author-sidebar .author-sidebar-infor .author-description .container-blog .content-area .pagination .pagenavi span:hover, .container-blog .content-area .pagination .pagenavi .author-sidebar .author-sidebar-infor .author-description span:hover, .author-sidebar .author-sidebar-infor .author-description .container-blog-single .content-area .pagination .pagenavi span:hover, .container-blog-single .content-area .pagination .pagenavi .author-sidebar .author-sidebar-infor .author-description span:hover, .author-sidebar .author-sidebar-infor .author-description .container-animator .content-area .pagination .pagenavi span:hover, .container-animator .content-area .pagination .pagenavi .author-sidebar .author-sidebar-infor .author-description span:hover {
+      color: #404040; }
+
+.entry-header .author-masterpiece {
+  list-style: none;
+  padding: 0px; }
+  .entry-header .author-masterpiece li {
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 1.14875rem; }
+
+.entry-content .description-single-author {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  background: #ebebeb;
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 1rem; }
+  @media only screen and (max-width: 767px) {
+    .entry-content .description-single-author {
+      padding: 10px; } }
+.entry-content .infor-recruit th, .infor-company table tr .entry-content .infor-recruit td, .entry-content .infor-recruit table tr td {
+  padding: 15px 8px;
+  text-align: left;
+  border-bottom: 1px solid #404040;
+  font-weight: 400; }
+  .entry-content .infor-recruit th:first-child, .infor-company table tr .entry-content .infor-recruit td:first-child, .entry-content .infor-recruit table tr td:first-child {
+    width: 20%;
+    color: #1b499d; }
+    @media only screen and (max-width: 767px) {
+      .entry-content .infor-recruit th:first-child, .infor-company table tr .entry-content .infor-recruit td:first-child, .entry-content .infor-recruit table tr td:first-child {
+        width: 25%; } }
+.entry-content .go-form-apply {
+  padding: 0 35px;
+  display: flex;
+  float: left;
+  width: 100%;
+  margin-bottom: 2rem;
+  background: #ebebeb;
+  position: relative; }
+  @media only screen and (max-width: 767px) {
+    .entry-content .go-form-apply {
+      padding: 0 20px; } }
+  .entry-content .go-form-apply .position-apply {
+    padding: 50px 0px;
+    font-size: 1.5rem; }
+    @media only screen and (max-width: 2500px) {
+      .entry-content .go-form-apply .position-apply {
+        padding: 40px 0px; } }
+    @media only screen and (max-width: 1920px) {
+      .entry-content .go-form-apply .position-apply {
+        padding: 30px 0px; } }
+    @media only screen and (max-width: 767px) {
+      .entry-content .go-form-apply .position-apply {
+        padding: 20px 0px; } }
+  .entry-content .go-form-apply .recruit-reamore-apply a, .entry-content .go-form-apply .recruit-reamore-apply .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .entry-content .go-form-apply .recruit-reamore-apply a:hover, .entry-content .go-form-apply .recruit-reamore-apply .container-blog-single .post-recent-author ul li a:hover, .container-blog-single .post-recent-author ul li .entry-content .go-form-apply .recruit-reamore-apply a:hover, .entry-content .go-form-apply .recruit-reamore-apply .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .entry-content .go-form-apply .recruit-reamore-apply .cat-links:hover, .entry-content .go-form-apply .recruit-reamore-apply .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .entry-content .go-form-apply .recruit-reamore-apply .cat-links:hover, .entry-content .go-form-apply .recruit-reamore-apply .container-blog .content-area .pagination .pagenavi span, .container-blog .content-area .pagination .pagenavi .entry-content .go-form-apply .recruit-reamore-apply span, .entry-content .go-form-apply .recruit-reamore-apply .container-blog-single .content-area .pagination .pagenavi span, .container-blog-single .content-area .pagination .pagenavi .entry-content .go-form-apply .recruit-reamore-apply span, .entry-content .go-form-apply .recruit-reamore-apply .container-animator .content-area .pagination .pagenavi span, .container-animator .content-area .pagination .pagenavi .entry-content .go-form-apply .recruit-reamore-apply span {
+    background: #e71f1a;
+    color: #ffffff;
+    padding: 50px;
+    right: 0px;
+    position: absolute;
+    font-size: 1.5rem; }
+    @media only screen and (max-width: 2500px) {
+      .entry-content .go-form-apply .recruit-reamore-apply a, .entry-content .go-form-apply .recruit-reamore-apply .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .entry-content .go-form-apply .recruit-reamore-apply a:hover, .entry-content .go-form-apply .recruit-reamore-apply .container-blog-single .post-recent-author ul li a:hover, .container-blog-single .post-recent-author ul li .entry-content .go-form-apply .recruit-reamore-apply a:hover, .entry-content .go-form-apply .recruit-reamore-apply .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .entry-content .go-form-apply .recruit-reamore-apply .cat-links:hover, .entry-content .go-form-apply .recruit-reamore-apply .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .entry-content .go-form-apply .recruit-reamore-apply .cat-links:hover, .entry-content .go-form-apply .recruit-reamore-apply .container-blog .content-area .pagination .pagenavi span, .container-blog .content-area .pagination .pagenavi .entry-content .go-form-apply .recruit-reamore-apply span, .entry-content .go-form-apply .recruit-reamore-apply .container-blog-single .content-area .pagination .pagenavi span, .container-blog-single .content-area .pagination .pagenavi .entry-content .go-form-apply .recruit-reamore-apply span, .entry-content .go-form-apply .recruit-reamore-apply .container-animator .content-area .pagination .pagenavi span, .container-animator .content-area .pagination .pagenavi .entry-content .go-form-apply .recruit-reamore-apply span {
+        padding: 40px 10px; } }
+    @media only screen and (max-width: 1920px) {
+      .entry-content .go-form-apply .recruit-reamore-apply a, .entry-content .go-form-apply .recruit-reamore-apply .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .entry-content .go-form-apply .recruit-reamore-apply a:hover, .entry-content .go-form-apply .recruit-reamore-apply .container-blog-single .post-recent-author ul li a:hover, .container-blog-single .post-recent-author ul li .entry-content .go-form-apply .recruit-reamore-apply a:hover, .entry-content .go-form-apply .recruit-reamore-apply .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .entry-content .go-form-apply .recruit-reamore-apply .cat-links:hover, .entry-content .go-form-apply .recruit-reamore-apply .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .entry-content .go-form-apply .recruit-reamore-apply .cat-links:hover, .entry-content .go-form-apply .recruit-reamore-apply .container-blog .content-area .pagination .pagenavi span, .container-blog .content-area .pagination .pagenavi .entry-content .go-form-apply .recruit-reamore-apply span, .entry-content .go-form-apply .recruit-reamore-apply .container-blog-single .content-area .pagination .pagenavi span, .container-blog-single .content-area .pagination .pagenavi .entry-content .go-form-apply .recruit-reamore-apply span, .entry-content .go-form-apply .recruit-reamore-apply .container-animator .content-area .pagination .pagenavi span, .container-animator .content-area .pagination .pagenavi .entry-content .go-form-apply .recruit-reamore-apply span {
+        padding: 30px 10px; } }
+    @media only screen and (max-width: 767px) {
+      .entry-content .go-form-apply .recruit-reamore-apply a, .entry-content .go-form-apply .recruit-reamore-apply .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .entry-content .go-form-apply .recruit-reamore-apply a:hover, .entry-content .go-form-apply .recruit-reamore-apply .container-blog-single .post-recent-author ul li a:hover, .container-blog-single .post-recent-author ul li .entry-content .go-form-apply .recruit-reamore-apply a:hover, .entry-content .go-form-apply .recruit-reamore-apply .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .entry-content .go-form-apply .recruit-reamore-apply .cat-links:hover, .entry-content .go-form-apply .recruit-reamore-apply .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .entry-content .go-form-apply .recruit-reamore-apply .cat-links:hover, .entry-content .go-form-apply .recruit-reamore-apply .container-blog .content-area .pagination .pagenavi span, .container-blog .content-area .pagination .pagenavi .entry-content .go-form-apply .recruit-reamore-apply span, .entry-content .go-form-apply .recruit-reamore-apply .container-blog-single .content-area .pagination .pagenavi span, .container-blog-single .content-area .pagination .pagenavi .entry-content .go-form-apply .recruit-reamore-apply span, .entry-content .go-form-apply .recruit-reamore-apply .container-animator .content-area .pagination .pagenavi span, .container-animator .content-area .pagination .pagenavi .entry-content .go-form-apply .recruit-reamore-apply span {
+        padding: 20px 10px; } }
+
+.infor-company table, .entry-content .infor-recruit table {
+  border-collapse: collapse;
+  width: 100%; }
+  .infor-company table tr:hover, .entry-content .infor-recruit table tr:hover {
+    background-color: #f5f5f5; }
+  .infor-company table tr th, .entry-content .infor-recruit table tr th, .infor-company table tr td, .entry-content .infor-recruit table tr td {
+    padding: 15px 8px;
+    text-align: left;
+    border-bottom: 1px solid #404040;
+    font-weight: 400; }
+    .infor-company table tr th:first-child, .entry-content .infor-recruit table tr th:first-child, .infor-company table tr td:first-child, .entry-content .infor-recruit table tr td:first-child {
+      width: 25%;
+      color: #1b499d; }
+      @media only screen and (max-width: 767px) {
+        .infor-company table tr th:first-child, .entry-content .infor-recruit table tr th:first-child, .infor-company table tr td:first-child, .entry-content .infor-recruit table tr td:first-child {
+          width: 30%; } }
+
+.banner-single-recruit .text-of-banner .box-content-text {
+  background: #ffffff;
+  color: #404040; }
+
+.formsearch-post-blog {
+  margin-top: 0rem; }
+
+.container-blog, .container-blog-single, .container-animator {
+  width: 2500px;
+  max-width: 100%;
+  padding: 0px 5.5rem;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (max-width: 2500px) {
+    .container-blog, .container-blog-single, .container-animator {
+      width: 2000px; } }
+  @media only screen and (max-width: 1920px) {
+    .container-blog, .container-blog-single, .container-animator {
+      width: 1500px; } }
+  @media only screen and (max-width: 920px) {
+    .container-blog, .container-blog-single, .container-animator {
+      padding: 0px 2rem; } }
+  @media only screen and (max-width: 767px) {
+    .container-blog, .container-blog-single, .container-animator {
+      padding: 0 1rem; } }
+  .container-blog .content-area, .container-blog-single .content-area, .container-animator .content-area {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 73%;
+    flex: 0 0 73%;
+    max-width: 73%;
+    width: 100%;
+    min-height: 1px;
+    float: left;
+    padding-right: 25px;
+    padding-left: 25px; }
+    @media only screen and (max-width: 767px) {
+      .container-blog .content-area, .container-blog-single .content-area, .container-animator .content-area {
+        max-width: 100%;
+        padding: 0; } }
+    .container-blog .content-area .pagination, .container-blog-single .content-area .pagination, .container-animator .content-area .pagination {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      width: 100%; }
+      .container-blog .content-area .pagination .pagenavi, .container-blog-single .content-area .pagination .pagenavi, .container-animator .content-area .pagination .pagenavi {
+        display: inline-block;
+        padding: 10px 0px;
+        width: 100%; }
+        .container-blog .content-area .pagination .pagenavi a, .container-blog-single .content-area .pagination .pagenavi a, .container-animator .content-area .pagination .pagenavi a, .container-blog .content-area .pagination .pagenavi .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .content-area .pagination .pagenavi .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .content-area .pagination .pagenavi a:hover, .container-animator .content-area .pagination .pagenavi .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog .content-area .pagination .pagenavi .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-blog .content-area .pagination .pagenavi .cat-links:hover, .container-blog-single .content-area .pagination .pagenavi .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-blog-single .content-area .pagination .pagenavi .cat-links:hover, .container-animator .content-area .pagination .pagenavi .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-animator .content-area .pagination .pagenavi .cat-links:hover, .container-blog .content-area .pagination .pagenavi .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-blog .content-area .pagination .pagenavi .cat-links:hover, .container-blog-single .content-area .pagination .pagenavi .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-blog-single .content-area .pagination .pagenavi .cat-links:hover, .container-animator .content-area .pagination .pagenavi .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-animator .content-area .pagination .pagenavi .cat-links:hover, .container-blog .content-area .pagination .pagenavi span, .container-blog-single .content-area .pagination .pagenavi span, .container-animator .content-area .pagination .pagenavi span {
+          padding: 8px 16px;
+          text-decoration: none;
+          line-height: 35px;
+          transition: background-color .3s;
+          border-radius: 50%;
+          background: #1b499d;
+          color: #ffffff; }
+        .container-blog .content-area .pagination .pagenavi .current, .container-blog-single .content-area .pagination .pagenavi .current, .container-animator .content-area .pagination .pagenavi .current, .container-blog .content-area .pagination .pagenavi a:hover, .container-blog-single .content-area .pagination .pagenavi a:hover, .container-animator .content-area .pagination .pagenavi a:hover, .container-blog .content-area .pagination .pagenavi .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .content-area .pagination .pagenavi .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .content-area .pagination .pagenavi a:hover, .container-animator .content-area .pagination .pagenavi .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog .content-area .pagination .pagenavi .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-blog .content-area .pagination .pagenavi .cat-links:hover, .container-blog-single .content-area .pagination .pagenavi .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-blog-single .content-area .pagination .pagenavi .cat-links:hover, .container-animator .content-area .pagination .pagenavi .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-animator .content-area .pagination .pagenavi .cat-links:hover, .container-blog .content-area .pagination .pagenavi .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-blog .content-area .pagination .pagenavi .cat-links:hover, .container-blog-single .content-area .pagination .pagenavi .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-blog-single .content-area .pagination .pagenavi .cat-links:hover, .container-animator .content-area .pagination .pagenavi .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-animator .content-area .pagination .pagenavi .cat-links:hover, .container-blog .content-area .pagination .pagenavi span:hover, .container-blog-single .content-area .pagination .pagenavi span:hover, .container-animator .content-area .pagination .pagenavi span:hover {
+          background: #f4dc25;
+          color: #ffffff; }
+        .container-blog .content-area .pagination .pagenavi .page-numbers, .container-blog-single .content-area .pagination .pagenavi .page-numbers, .container-animator .content-area .pagination .pagenavi .page-numbers {
+          margin: 0 2px; }
+        .container-blog .content-area .pagination .pagenavi .next, .container-blog-single .content-area .pagination .pagenavi .next, .container-animator .content-area .pagination .pagenavi .next, .container-blog .content-area .pagination .pagenavi .prev, .container-blog-single .content-area .pagination .pagenavi .prev, .container-animator .content-area .pagination .pagenavi .prev {
+          margin: 0 4px; }
+  .container-blog .widget-area, .container-blog-single .widget-area, .container-animator .widget-area {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 27%;
+    flex: 0 0 27%;
+    max-width: 27%;
+    width: 100%;
+    min-height: 1px;
+    float: right;
+    padding-right: 15px;
+    padding-left: 15px; }
+    @media only screen and (max-width: 767px) {
+      .container-blog .widget-area, .container-blog-single .widget-area, .container-animator .widget-area {
+        max-width: 100%;
+        padding: 0;
+        margin-top: 20px; } }
+    .container-blog .widget-area .widget_media_image img, .container-blog-single .widget-area .widget_media_image img, .container-animator .widget-area .widget_media_image img {
+      width: 100%; }
+    .container-blog .widget-area .cat-wisget, .container-blog-single .widget-area .cat-wisget, .container-animator .widget-area .cat-wisget {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      float: left;
+      border: 1px solid #c0bfbe;
+      background: #ffffff;
+      margin-bottom: 1.5em; }
+      .container-blog .widget-area .cat-wisget ul, .container-blog-single .widget-area .cat-wisget ul, .container-animator .widget-area .cat-wisget ul {
+        padding: 0px;
+        list-style: none; }
+        .container-blog .widget-area .cat-wisget ul li a, .container-blog-single .widget-area .cat-wisget ul li a, .container-animator .widget-area .cat-wisget ul li a, .container-blog .widget-area .cat-wisget ul li .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .widget-area .cat-wisget ul li .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .widget-area .cat-wisget ul li a:hover, .container-animator .widget-area .cat-wisget ul li .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog .widget-area .cat-wisget ul li .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-blog .widget-area .cat-wisget ul li .cat-links:hover, .container-blog-single .widget-area .cat-wisget ul li .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-blog-single .widget-area .cat-wisget ul li .cat-links:hover, .container-animator .widget-area .cat-wisget ul li .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-animator .widget-area .cat-wisget ul li .cat-links:hover, .container-blog .widget-area .cat-wisget ul li .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-blog .widget-area .cat-wisget ul li .cat-links:hover, .container-blog-single .widget-area .cat-wisget ul li .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-blog-single .widget-area .cat-wisget ul li .cat-links:hover, .container-animator .widget-area .cat-wisget ul li .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-animator .widget-area .cat-wisget ul li .cat-links:hover, .container-blog .widget-area .cat-wisget ul li .content-area .pagination .pagenavi span, .container-blog .content-area .pagination .pagenavi .widget-area .cat-wisget ul li span, .container-blog-single .widget-area .cat-wisget ul li .content-area .pagination .pagenavi span, .container-blog-single .content-area .pagination .pagenavi .widget-area .cat-wisget ul li span, .container-animator .widget-area .cat-wisget ul li .content-area .pagination .pagenavi span, .container-animator .content-area .pagination .pagenavi .widget-area .cat-wisget ul li span {
+          border-top: 1px solid #c0bfbe;
+          width: 100%;
+          position: relative;
+          float: left;
+          padding: 1.7rem 25px;
+          font-size: 17px;
+          color: #404040;
+          transition: .3s; }
+          .container-blog .widget-area .cat-wisget ul li a:hover, .container-blog-single .widget-area .cat-wisget ul li a:hover, .container-animator .widget-area .cat-wisget ul li a:hover, .container-blog .widget-area .cat-wisget ul li .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .widget-area .cat-wisget ul li .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .widget-area .cat-wisget ul li a:hover, .container-animator .widget-area .cat-wisget ul li .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog .widget-area .cat-wisget ul li .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-blog .widget-area .cat-wisget ul li .cat-links:hover, .container-blog-single .widget-area .cat-wisget ul li .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-blog-single .widget-area .cat-wisget ul li .cat-links:hover, .container-animator .widget-area .cat-wisget ul li .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-animator .widget-area .cat-wisget ul li .cat-links:hover, .container-blog .widget-area .cat-wisget ul li .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-blog .widget-area .cat-wisget ul li .cat-links:hover, .container-blog-single .widget-area .cat-wisget ul li .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-blog-single .widget-area .cat-wisget ul li .cat-links:hover, .container-animator .widget-area .cat-wisget ul li .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-animator .widget-area .cat-wisget ul li .cat-links:hover, .container-blog .widget-area .cat-wisget ul li .content-area .pagination .pagenavi span:hover, .container-blog .content-area .pagination .pagenavi .widget-area .cat-wisget ul li span:hover, .container-blog-single .widget-area .cat-wisget ul li .content-area .pagination .pagenavi span:hover, .container-blog-single .content-area .pagination .pagenavi .widget-area .cat-wisget ul li span:hover, .container-animator .widget-area .cat-wisget ul li .content-area .pagination .pagenavi span:hover, .container-animator .content-area .pagination .pagenavi .widget-area .cat-wisget ul li span:hover {
+            background: #efefef2e;
+            color: #f4dc25; }
+          .container-blog .widget-area .cat-wisget ul li a span, .container-blog-single .widget-area .cat-wisget ul li a span, .container-animator .widget-area .cat-wisget ul li a span, .container-blog .widget-area .cat-wisget ul li .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover span, .container-blog-single .widget-area .cat-wisget ul li .author-single .author-single-entry .iw-property-name .name-author a:hover span, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author .widget-area .cat-wisget ul li a:hover span, .container-animator .widget-area .cat-wisget ul li .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover span, .container-blog .widget-area .cat-wisget ul li .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover span, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-blog .widget-area .cat-wisget ul li .cat-links:hover span, .container-blog-single .widget-area .cat-wisget ul li .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover span, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-blog-single .widget-area .cat-wisget ul li .cat-links:hover span, .container-animator .widget-area .cat-wisget ul li .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover span, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-animator .widget-area .cat-wisget ul li .cat-links:hover span, .container-blog .widget-area .cat-wisget ul li .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover span, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-blog .widget-area .cat-wisget ul li .cat-links:hover span, .container-blog-single .widget-area .cat-wisget ul li .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover span, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-blog-single .widget-area .cat-wisget ul li .cat-links:hover span, .container-animator .widget-area .cat-wisget ul li .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover span, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-animator .widget-area .cat-wisget ul li .cat-links:hover span, .container-blog .widget-area .cat-wisget ul li .content-area .pagination .pagenavi span span, .container-blog .content-area .pagination .pagenavi .widget-area .cat-wisget ul li span span, .container-blog-single .widget-area .cat-wisget ul li .content-area .pagination .pagenavi span span, .container-blog-single .content-area .pagination .pagenavi .widget-area .cat-wisget ul li span span, .container-animator .widget-area .cat-wisget ul li .content-area .pagination .pagenavi span span, .container-animator .content-area .pagination .pagenavi .widget-area .cat-wisget ul li span span {
+            float: right; }
+      .container-blog .widget-area .cat-wisget .title, .container-blog-single .widget-area .cat-wisget .title, .container-animator .widget-area .cat-wisget .title {
+        font-size: 1.5rem;
+        padding: 1.5rem 25px;
+        background: #f4dc25;
+        font-weight: 600; }
+  .container-blog article, .container-blog-single article, .container-animator article {
+    padding: 0 7.5px;
+    display: inline-block;
+    float: left;
+    width: 50%; }
+    .container-blog article:nth-of-type(2n+1), .container-blog-single article:nth-of-type(2n+1), .container-animator article:nth-of-type(2n+1) {
+      clear: both; }
+    @media only screen and (max-width: 767px) {
+      .container-blog article, .container-blog-single article, .container-animator article {
+        width: 100%;
+        padding: 0; } }
+    .container-blog article .post-thumbnail, .container-blog-single article .post-thumbnail, .container-animator article .post-thumbnail {
+      width: 100%;
+      float: left;
+      display: -webkit-flex;
+      -webkit-align-items: center;
+      display: flex;
+      align-items: center; }
+    .container-blog article .entry-header-blog, .container-blog-single article .entry-header-blog, .container-animator article .entry-header-blog {
+      background: #ffffff;
+      padding: 15px 18px;
+      width: 100%;
+      float: left; }
+      .container-blog article .entry-header-blog .cat-links a, .container-blog-single article .entry-header-blog .cat-links a, .container-animator article .entry-header-blog .cat-links a, .container-blog article .entry-header-blog .cat-links .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single article .entry-header-blog .cat-links .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author article .entry-header-blog .cat-links a:hover, .container-animator article .entry-header-blog .cat-links .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog article .entry-header-blog .cat-links .container-blog-single .post-recent-author ul li a:hover, .container-blog-single article .entry-header-blog .cat-links .post-recent-author ul li a:hover, .container-blog-single .post-recent-author ul li article .entry-header-blog .cat-links a:hover, .container-animator article .entry-header-blog .cat-links .container-blog-single .post-recent-author ul li a:hover, .container-blog article .entry-header-blog .cat-links .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-blog article .entry-header-blog .cat-links .cat-links:hover, .container-blog-single article .entry-header-blog .cat-links .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-blog-single article .entry-header-blog .cat-links .cat-links:hover, .container-animator article .entry-header-blog .cat-links .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-animator article .entry-header-blog .cat-links .cat-links:hover, .container-blog article .entry-header-blog .cat-links .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-blog article .entry-header-blog .cat-links .cat-links:hover, .container-blog-single article .entry-header-blog .cat-links .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-blog-single article .entry-header-blog .cat-links .cat-links:hover, .container-animator article .entry-header-blog .cat-links .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-animator article .entry-header-blog .cat-links .cat-links:hover, .container-blog article .entry-header-blog .cat-links .content-area .pagination .pagenavi span, .container-blog .content-area .pagination .pagenavi article .entry-header-blog .cat-links span, .container-blog-single article .entry-header-blog .cat-links .content-area .pagination .pagenavi span, .container-blog-single .content-area .pagination .pagenavi article .entry-header-blog .cat-links span, .container-animator article .entry-header-blog .cat-links .content-area .pagination .pagenavi span, .container-animator .content-area .pagination .pagenavi article .entry-header-blog .cat-links span {
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: #241607; }
+      .container-blog article .entry-header-blog .entry-meta-blog, .container-blog-single article .entry-header-blog .entry-meta-blog, .container-animator article .entry-header-blog .entry-meta-blog {
+        padding: 8px 0px 5px;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 20px; }
+      .container-blog article .entry-header-blog .entry-title-blog, .container-blog-single article .entry-header-blog .entry-title-blog, .container-animator article .entry-header-blog .entry-title-blog {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #241607; }
+      .container-blog article .entry-header-blog a, .container-blog-single article .entry-header-blog a, .container-animator article .entry-header-blog a, .container-blog article .entry-header-blog .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single article .entry-header-blog .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog-single .author-single .author-single-entry .iw-property-name .name-author article .entry-header-blog a:hover, .container-animator article .entry-header-blog .container-blog-single .author-single .author-single-entry .iw-property-name .name-author a:hover, .container-blog article .entry-header-blog .container-blog-single .post-recent-author ul li a:hover, .container-blog-single article .entry-header-blog .post-recent-author ul li a:hover, .container-blog-single .post-recent-author ul li article .entry-header-blog a:hover, .container-animator article .entry-header-blog .container-blog-single .post-recent-author ul li a:hover, .container-blog article .entry-header-blog .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-blog article .entry-header-blog .cat-links:hover, .container-blog-single article .entry-header-blog .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-blog-single article .entry-header-blog .cat-links:hover, .container-animator article .entry-header-blog .banner-single-post .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-post .text-of-banner .box-content-text .title-content-text .container-animator article .entry-header-blog .cat-links:hover, .container-blog article .entry-header-blog .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-blog article .entry-header-blog .cat-links:hover, .container-blog-single article .entry-header-blog .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-blog-single article .entry-header-blog .cat-links:hover, .container-animator article .entry-header-blog .banner-single-recruit .text-of-banner .box-content-text .title-content-text .cat-links:hover, .banner-single-recruit .text-of-banner .box-content-text .title-content-text .container-animator article .entry-header-blog .cat-links:hover, .container-blog article .entry-header-blog .content-area .pagination .pagenavi span, .container-blog .content-area .pagination .pagenavi article .entry-header-blog span, .container-blog-single article .entry-header-blog .content-area .pagination .pagenavi span, .container-blog-single .content-area .pagination .pagenavi article .entry-header-blog span, .container-animator article .entry-header-blog .content-area .pagination .pagenavi span, .container-animator .content-area .pagination .pagenavi article .entry-header-blog span {
+        color: #000000; }
+
+.clearfix {
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px; }
+  @media only screen and (max-width: 767px) {
+    .clearfix {
+      margin-bottom: 20px; } }
+
+/*# sourceMappingURL=blogstyle.css.map */
